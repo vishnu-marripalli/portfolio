@@ -3,9 +3,15 @@
 * {
     margin: 0px;
     padding: 0px;
-
+    
 }
 
+body{
+    overflow-x: hidden;
+}
+.homecontainer{
+    width: 100%;
+}
 .homelogo {
 
     position: absolute;
@@ -42,3 +48,242 @@
     font-size: 20px;
 }
 
+
+.sub-heading {
+
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.logos {
+    width: 189px;
+    gap: 15px;
+}
+
+.homecontains {
+    position: absolute;
+    top: 250px;
+    left: 140px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    z-index: 10;
+}
+.aboutcontainer{
+    width: 100%;
+    height: 215vh;
+    /* border: black solid 2px; */
+}
+.bg-2 {
+    position: relative;
+    top: -500px;
+    left: -310px;
+    z-index: -10;
+}
+
+.img-box-1 {
+    /* border: #000000 solid 2px; */
+    position: absolute;
+    top: 800px;
+    left: 110px;
+    width: 450px;
+    height: 550px;
+}
+
+.BG {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.img-vishnu {
+    position: absolute;
+    left: 16px;
+    top: -20px;
+    z-index: 1;
+    filter: grayscale(1);
+    width: 450px;
+}
+
+.about-box {
+    width: 600px;
+    position: relative;
+    top: -1000px;
+    left: 750px;
+    gap: 28px;
+}
+
+.p-ab {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "League Spartan";
+}
+
+.h-ab {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "League Spartan";
+}
+
+.bg-3 {
+    position: absolute;
+    right: -80px;
+    top: 900px;
+}
+
+.img-box-2 {
+    position: absolute;
+    top: 1550px;
+    right: 110px;
+    width: 450px;
+    height: 550px;
+
+}
+
+.BG1 {
+    position: relative;
+    top: -71px;
+    right: -351px;
+}
+
+
+.img-comp {
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    right: -8px;
+    width: 400px;
+}
+.skills-box {
+    width: 750px;
+    position: relative;
+    top: -650px;
+    left: 150px;
+    gap: 28px;
+}
+.Skills{
+    gap: 30px;
+    margin-top: 40px;
+}
+.html{
+    width: 90%;
+   
+}
+.CSS{
+    width: 80%;
+   
+}
+.js{
+    width: 70%;
+   
+}
+
+.img-box-3 {
+    position: relative;
+    top: 0px;
+    left: 150px;
+    width: 450px;
+    height: 550px;
+}
+
+.BG2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.img-work {
+    position: absolute;
+    left: 38px;
+    top: 46px;
+    z-index: 1;
+    width: 390px;
+}
+
+.work-box {
+    width: 600px;
+    position: relative;
+    top: -430px;
+    left: 750px;
+    gap: 28px;
+}
+.workcontainer{
+    /* border: black solid 2px; */
+   
+    width: 100%;
+    height: 110vh;
+}
+.workslist{
+    position: relative;
+    top: -230px;
+    height: 100vh;
+}
+.bg-4{
+    position: relative;
+    top: 500px;
+}
+.badges{
+    gap: 10px;
+}
+.badge{
+   background-color:  #928A97;
+}
+.contact{
+    width: 100%;
+    border: black solid 2px;
+    height: 100vh;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+.contact-box {
+    width: 80vw;
+    height: 80vh;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+    top: -654px;
+    left: 132px;
+    padding: 20px;
+}
+.h-c{
+    padding-top: 20px;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "League Spartan";
+}
+.c-text {
+    margin: 100px;
+    padding: 21px;
+    width: 50%;
+}
+.c-text > p{
+
+    font-size: 42px;
+    font-weight: 600;
+    font-family: "League Spartan";
+
+}
+.contactform {
+    margin-top: 82px;
+    width: 56%;
+    height: 70%;
+    gap: 25px;
+}
+.button{
+    color: #fff;
+    background-color:  #000C24;
+    padding: 5px;
+    border-radius: 3px;
+    width: 30%;
+}
