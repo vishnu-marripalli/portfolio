@@ -3,32 +3,50 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
-body{
+body {
     overflow-x: hidden;
 }
-.homecontainer{
-    width: 100%;
+
+.homecontainer {
+    width: 100vw;
+    height: 110vh;
+    /* background-image: url("backgrounds/bg-1.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;
+    overflow: hidden; */
+
+
 }
+
+.homecontainer::before {
+    content: "";
+    background-image: url("backgrounds/bg-1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 110vh;
+    width: 100%;
+    z-index: -1;
+
+
+}
+
 .homelogo {
 
     position: absolute;
     top: -5px;
-    left: 90px;
+    left: 5px;
 }
 
-.bg-img-1 {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
 .navbar1 {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #00000000;
     padding-top: 2rem;
     padding-bottom: 0.5rem;
@@ -37,7 +55,9 @@ body{
 
 .navmenu {
     list-style: none;
-    width: 55%;
+    width: 100vw;
+    justify-content: flex-start;
+    gap: 10vw;
 
 }
 
@@ -77,25 +97,37 @@ body{
     align-content: center;
     z-index: 10;
 }
-.aboutcontainer{
-    width: 100%;
-    height: 215vh;
-    /* border: black solid 2px; */
+
+.aboutcontainer {
+    width: 100vw;
+    height: 110vh;
+    gap: 250px;
+    align-items: center;
+    justify-content: flex-start;
 }
-.bg-2 {
-    position: relative;
-    top: -500px;
-    left: -310px;
+
+.aboutcontainer::before {
+    content: "";
+    background-image: url("backgrounds/bg-2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -400px;
+
+    background-position: center;
+    height: 160vh;
+    width: 100%;
     z-index: -10;
+
+
 }
 
 .img-box-1 {
     /* border: #000000 solid 2px; */
-    position: absolute;
-    top: 800px;
-    left: 110px;
+    position: relative;
+    top: 15px;
+    left: 75px;
     width: 450px;
-    height: 550px;
+    height: 650px;
 }
 
 .BG {
@@ -105,9 +137,8 @@ body{
 }
 
 .img-vishnu {
-    position: absolute;
-    left: 16px;
-    top: -20px;
+    position: relative;
+    top: -226px;
     z-index: 1;
     filter: grayscale(1);
     width: 450px;
@@ -115,10 +146,7 @@ body{
 
 .about-box {
     width: 600px;
-    position: relative;
-    top: -1000px;
-    left: 750px;
-    gap: 28px;
+
 }
 
 .p-ab {
@@ -133,66 +161,84 @@ body{
     font-family: "League Spartan";
 }
 
-.bg-3 {
-    position: absolute;
-    right: -80px;
-    top: 900px;
+.skills-container {
+    width: 100vw;
+    height: 100vh;
+    /* border: #000000 solid 5px; */
+    gap: 150px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.img-box-2 {
+.skills-container::before {
+    content: "";
+    background-image: url("backgrounds/bg-3.png");
+    background-repeat: no-repeat;
     position: absolute;
-    top: 1550px;
-    right: 110px;
+    left: 340px;
+
+    background-position: center;
+    height: 160vh;
+    width: 100%;
+    z-index: 0;
+
+}
+
+
+.img-box-2 {
+    /* border: #000000 solid 2px; */
+    position: relative;
+    top: 0px;
+    right: 0px;
     width: 450px;
-    height: 550px;
+    height: 650px;
 
 }
 
 .BG1 {
     position: relative;
-    top: -71px;
-    right: -351px;
+    top: 0;
+    left: 295px;
 }
 
 
 .img-comp {
-    position: absolute;
-    top: -20px;
+    position: relative;
+    top: -156px;
+    right: 0px;
     z-index: 1;
-    right: -8px;
     width: 400px;
 }
+
 .skills-box {
-    width: 750px;
-    position: relative;
+    width: 550px;
+    /*position: relative;
     top: -650px;
     left: 150px;
-    gap: 28px;
+    gap: 28px; */
 }
-.Skills{
+
+.Skills {
     gap: 30px;
     margin-top: 40px;
 }
-.html{
+
+.html {
     width: 90%;
-   
-}
-.CSS{
-    width: 80%;
-   
-}
-.js{
-    width: 70%;
-   
+
 }
 
-.img-box-3 {
-    position: relative;
-    top: 0px;
-    left: 150px;
-    width: 450px;
-    height: 550px;
+.CSS {
+    width: 80%;
+
 }
+
+.js {
+    width: 70%;
+
+}
+
+
 
 .BG2 {
     position: relative;
@@ -200,90 +246,159 @@ body{
     left: 0px;
 }
 
-.img-work {
-    position: absolute;
-    left: 38px;
-    top: 46px;
-    z-index: 1;
-    width: 390px;
-}
-
-.work-box {
-    width: 600px;
-    position: relative;
-    top: -430px;
-    left: 750px;
-    gap: 28px;
-}
-.workcontainer{
+.workcontainer {
     /* border: black solid 2px; */
-   
+
     width: 100%;
     height: 110vh;
 }
-.workslist{
-    position: relative;
-    top: -230px;
-    height: 100vh;
+
+.workcontainer::before {
+    content: "";
+    background-image: url("backgrounds/bg-2.png");
+
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -600px;
+
+    background-position: center;
+    height: 110vh;
+    width: 100%;
+    z-index: -1;
+
 }
-.bg-4{
+
+
+.work-box {
+    width: 600px;
+    /* position: relative;
+    top: -430px;
+    left: 750px;
+    gap: 28px; */
+}
+
+
+.workslist {
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.workslist::before {
+    content: "";
+    background-image: url("backgrounds/bg-4.png");
+
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 560px;
+
+    background-position: bottom;
+    height: 110vh;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.img-box-3 {
+    position: relative;
+    top: 50px;
+    right: 0px;
+    width: 450px;
+    height: 650px;
+
+}
+
+.img-work {
+    position: relative;
+    left: 42px;
+    top: -150px;
+    z-index: 1;
+    width: 450px;
+}
+
+.bg-4 {
     position: relative;
     top: 500px;
 }
-.badges{
+
+.badges {
     gap: 10px;
 }
-.badge{
-   background-color:  #928A97;
+
+.badge {
+    background-color: #928A97;
 }
-.contact{
+
+.contact {
     width: 100%;
-    border: black solid 2px;
+    /* border: black solid 2px; */
     height: 100vh;
 }
-.contact{
+
+.contact::before {
+    content: "";
+    background-image: url("backgrounds/contact.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
     width: 100%;
-    height: 100vh;
-    z-index: -1;
+    z-index: -10;
+
 }
+
 .contact-box {
     width: 80vw;
     height: 80vh;
     background-color: #fff;
     z-index: 1;
     position: relative;
-    top: -654px;
+    top: 90px;
     left: 132px;
     padding: 20px;
 }
-.h-c{
+
+.h-c {
     padding-top: 20px;
     font-size: 42px;
     font-weight: 600;
     font-family: "League Spartan";
 }
+
 .c-text {
     margin: 100px;
     padding: 21px;
     width: 50%;
 }
-.c-text > p{
+
+.c-text>p {
 
     font-size: 42px;
     font-weight: 600;
     font-family: "League Spartan";
 
 }
+
 .contactform {
     margin-top: 82px;
     width: 56%;
     height: 70%;
     gap: 25px;
 }
-.button{
+
+.button {
     color: #fff;
-    background-color:  #000C24;
+    background-color: #000C24;
     padding: 5px;
     border-radius: 3px;
     width: 30%;
+}
+
+footer {
+    width: 100vw;
+    height: 27vh;
+    background-color: #000C24;
+    gap: 20px;
 }

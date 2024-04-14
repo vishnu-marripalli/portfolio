@@ -1,0 +1,132 @@
+@media(max-width : 500px){
+
+    .homecontainer::before,.skills-container::before,.aboutcontainer::before,.workcontainer::before,.contact::before,.workslist::before {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+      
+    }
+    .aboutcontainer,.homecontainer,.contact,.workcontainer{
+        flex-direction: column;
+    }
+    .homecontainer{
+        width: 100%;
+    }
+    .sub-heading{
+        font-size: 13px;
+    }
+
+    .aboutcontainer{
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .img-box-1{
+        height: 680px;
+        width: 90%;
+        left: 15px;
+    }
+    .img-vishnu{
+        width: 90%;
+        top: -200px;
+    }
+    .about-box{
+        width: 80%;
+        height: 100%;
+        align-items: center;
+
+    }
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    .homecontains {
+        left: 75px;
+        width: 200px;
+    }
+    /* .skills-container{
+        width: 100%;
+        height: 100%;
+    } */
+    .aboutcontainer{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .skillbar-container{
+        width: 90%;
+
+    }
+    .img-box-2{
+      display: none;
+    }
+    .skills-box{
+        width: 90%;
+    }
+    .workcontainer{
+        width: 100%;
+        height: 1000px;
+    }
+    .img-box-3{
+        width: 90%;
+        height: 100%;
+    }
+    .img-work{
+        width: 90%;
+    }
+    .workslist{
+        flex-direction: column;
+        height: 100%;
+    }
+    .work-box{
+        width: 90%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .inner-contactbox{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+    }
+    .contact{
+        height: 110vh;
+        width: 100%;
+    }
+    .contact-box{
+        top: 25px;
+        left: 40px;
+        width: 80%;
+        height: 90%;
+        justify-content: space-around;
+    }
+    .c-text{
+        margin: 0px;
+        width: 100%;
+    }
+    .contactform{
+        margin: 0px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .c-text>p {
+
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "League Spartan";
+    
+    }
+    .h-c{
+        padding: 0;
+        margin: 0;
+        font-size: 36px;
+
+    }
+    .button{
+        width: 50%;
+    }
+}
